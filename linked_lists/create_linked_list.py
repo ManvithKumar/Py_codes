@@ -7,10 +7,12 @@ class Linked_list:
     def __init__(self):
         self.head=None
         
+    #inserting the nodes from the head
     def insert_in_head(self,data):
         node=Node(data,self.head)
         self.head=node
     
+    #For displaying the nodes
     def display_node(self):
         if self.head is None:
             print("Empty Linked List")
@@ -19,7 +21,9 @@ class Linked_list:
             while data:
                 print(data.data)
                 data=data.next
-                
+    
+
+
 
 if __name__=='__main__':
     ll=Linked_list()
