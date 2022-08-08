@@ -1,0 +1,5 @@
+values=input("Enter the sequences")
+list=values.split(",")
+tuple=tuple(list)
+print(list)
+print(tuple)
